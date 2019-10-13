@@ -2,6 +2,9 @@ import DS from 'ember-data';
 const { Model, belongsTo } = DS;
 
 export default Model.extend({
-  title: DS.attr('string'),
+  name: DS.attr('string'),
+  type: DS.attr('string'),
+  alcoholPercentage: DS.attr('boolean'),
+
   brewery: belongsTo(),
 });

@@ -28,6 +28,8 @@ export default function() {
   this.get('breweries/:id', {include: 'beer'});
   this.get('brewery/:id');
   this.get('breweries/:id');
+  this.post('breweries/:id');
+  this.patch('breweries/:id');
   this.post('beers');
   this.get('beers');
 }

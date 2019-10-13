@@ -1,5 +1,5 @@
 <ul class="rr-list">
-  {{#each this.model.beers as |beer|}}
+  {{#each this.model.beer as |beer|}}
     <li class="rr-list-item">
       {{beer.title}}
       <StarRating
@@ -14,7 +14,7 @@
     </li>
   {{else}}
     <li class="tc">
-      No {{this.model.name}} Beers yet, why don't you <a href="#" {{on "click" this.addBeer}}>create one?</a>
+      No {{this.model.title}} Beers yet, why don't you <a href="#" {{on "click" this.addBeer}}>create one?</a>
     </li>
   {{/each}}
 </ul>
