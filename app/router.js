@@ -11,7 +11,10 @@ Router.map(function() {
 
   this.route('brewery', {
     path: 'breweries/:brewery_id'
+  }, function() {
+    this.route('details');
   });
+  this.route('beers');
 });
 
 export default Router;

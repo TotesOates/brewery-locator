@@ -24,6 +24,10 @@ export default function() {
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
 
-  this.get('breweries')
-  this.get('brewery/:id')
+  this.get('breweries');
+  this.get('breweries/:id', {include: 'beer'});
+  this.get('brewery/:id');
+  this.get('breweries/:id');
+  this.post('beers');
+  this.get('beers');
 }
