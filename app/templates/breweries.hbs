@@ -8,36 +8,36 @@
   {{/each}}
 </ul> --}}
 
-<div class="rr-sidebar">
+<div class="brew-sidebar">
   <ul class="list pl3">
     {{#each this.model as |brewery|}}
-      <li class='rr-list-item'>
-        <LinkTo @route='brewery' @model={{brewery.id}} class='rr-band-link'>
+      <li class='brew-list-item'>
+        <LinkTo @route='brewery' @model={{brewery.id}} class='brew-band-link'>
           {{brewery.name}}
-          <span class='rr-pointer'> {{fa-icon 'angle-right'}} </span>
+          <span class='brew-pointer'> {{fa-icon 'angle-right'}} </span>
         </LinkTo>
       </li>
     {{/each}}
   </ul>
-  <div class="rr-new-label">
+  <div class="brew-new-label">
     {{#if this.isAddingBrewery}}
-      <form class="rr-inline-form" {{on "submit" this.saveBrewery}}>
+      <form class="brew-inline-form" {{on "submit" this.saveBrewery}}>
         <Input
         @type="text"
         @value={{this.newBreweryName}}
-        class="rr-input"
+        class="brew-input"
         placeholder="New brewery"
-        data-test-rr="new-band-input"
+        data-test-brew="new-band-input"
         />
         <button
         type="submit"
-        class="rr-action-button"
+        class="brew-action-button"
         disabled={{this.isAddButtonDisabled}}>
         Add
         </button>
 
         <button
-        class="rr-cancel-icon"
+        class="brew-cancel-icon"
         {{on "click" this.cancelAddBrewery}}>
         {{fa-icon "times"}}
         </button>
@@ -49,6 +49,6 @@
     {{/if}}
   </div>
 </div>
-<div class="rr-main-panel">
+<div class="brew-main-panel">
   {{outlet}}
 </div>

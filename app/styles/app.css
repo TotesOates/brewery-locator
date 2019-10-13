@@ -2,31 +2,31 @@ a {
   color: inherit;
   text-decoration: none;
   }
-  .rr-container {
+  .brew-container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   }
-  .rr-container::after {
+  .brew-container::after {
   clear: both;
   }
   @media screen and (min-width: 60em) and (max-width: 100em) {
-  .rr-container {
+  .brew-container {
   width: 80%;
   }
   }
   @media screen and (min-width: 100em) {
-  .rr-container {
+  .brew-container {
   width: 50%;
   }
   }
-  .rr-page-header {
+  .brew-page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid;
   }
 
-  .rr-app-title > .rr-subtitle {
+  .brew-app-title > .brew-subtitle {
     font-weight: normal;
     }
     .list > li {
@@ -37,28 +37,28 @@ a {
       --bright-yellow: #ffda00;
       --navitem-link-color: var(--bright-yellow);
       }
-      .rr-navbar {
+      .brew-navbar {
       position: relative;
       min-height: 50px;
       border: 1px solid transparent;
       }
-      .rr-navbar > .rr-nav {
+      .brew-navbar > .brew-nav {
       display: flex;
       margin: 0;
       padding: 0;
       list-style-type: none;
       }
-      .rr-navbar-item {
+      .brew-navbar-item {
       padding: 5px;
       }
-      .rr-navbar-item > a:hover {
+      .brew-navbar-item > a:hover {
       border-bottom: 2px solid var(--navitem-link-color);
       }
-      .rr-navbar-item > a.active {
+      .brew-navbar-item > a.active {
       color: inherit;
       border-bottom: 2px solid var(--navitem-link-color);
       }
-      .rr-navbar-item + .rr-navbar-item {
+      .brew-navbar-item + .brew-navbar-item {
       margin-left: 10px;
       }
 
@@ -77,17 +77,17 @@ a {
   --button-disabled-color: var(--light-blue);
   }
 
-.rr-new-label {
+.brew-new-label {
   margin-top: 1rem;
   padding-left: 1rem;
   }
-  .rr-input {
+  .brew-input {
   color: var(--input-color);
   border-style: solid;
   border-width: 1px;
   padding: .25rem;
   }
-  .rr-action-button {
+  .brew-action-button {
   color: var(--button-color);
   background-color: var(--button-bg-color);
   border-radius: .125rem;
@@ -95,12 +95,12 @@ a {
   padding-left: .5rem;
   padding-right: .5rem;
   }
-  .rr-action-button:hover {background-color: var(--button-hover-color);
+  .brew-action-button:hover {background-color: var(--button-hover-color);
 }
-.rr-action-button[disabled] {
+.brew-action-button[disabled] {
 background-color: var(--button-disabled-color);
 }
-.rr-cancel-icon {
+.brew-cancel-icon {
 align-self: center;
 margin-left: .25rem;
 background: none;
@@ -108,33 +108,33 @@ border: none;
 color: inherit;
 cursor: pointer;
 }
-.rr-inline-form {
+.brew-inline-form {
 display: flex;
 }
-.rr-inline-form-group {
+.brew-inline-form-group {
 display: flex;
 justify-content: space-between;
 }
 
-.rr-sidebar {
+.brew-sidebar {
   float: left;
   width: calc( 100% / 3 ); /* .w-third */
   }
-  .rr-main-panel {
+  .brew-main-panel {
   float: left;
   width: calc( 100% / 1.5); /* .w-two-thirds */
   }
-  .rr-list {
+  .brew-list {
   list-style-type: none;
   }
-  .rr-list-item {
+  .brew-list-item {
   margin-bottom: 10px;
   }
-  .rr-band-link > .rr-pointer {
+  .brew-band-link > .brew-pointer {
   margin-left: 5px;
   display: none;
   }
-  .rr-band-link.active > .rr-pointer {
+  .brew-band-link.active > .brew-pointer {
   display: inline-block;
   }
 
@@ -147,16 +147,16 @@ justify-content: space-between;
     background-color: inherit;
     }
 
-    .rr-header-link > .rr-app-title {
+    .brew-header-link > .brew-app-title {
       margin-top: 0;
       margin-bottom: 0;
       }
-      .rr-panel {
+      .brew-panel {
       padding: 1rem;
       border: .125rem solid;
       border-radius: .125rem;
       }
-      .rr-textarea {
+      .brew-textarea {
       width: 100%;
       padding: .5rem;
       background-color: inherit;

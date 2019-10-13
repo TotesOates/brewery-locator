@@ -1,7 +1,7 @@
-<section class="rr-panel b--solid br1 bw1">
+<section class="brew-panel b--solid br1 bw1">
   <button 
     type="button" 
-    class="rr-action-button fr" 
+    class="brew-action-button fr" 
     {{action (if this.isEditing "save" "edit")}}
   >
     {{if this.isEditing "Save" "Edit"}}
@@ -9,7 +9,7 @@
   
   <h3>Description</h3>
   {{#if this.isEditing}}
-    <Textarea class="rr-textarea" @value={{this.model.description}} />
+    <Textarea class="brew-textarea" @value={{this.model.description}} />
   {{else}}
     <p class="lh-copy">{{this.model.description}}</p>
     <p class="lh-copy">{{this.model.location}}</p>
