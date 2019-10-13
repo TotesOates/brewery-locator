@@ -13,6 +13,7 @@ Router.map(function() {
     path: 'breweries/:brewery_id'
   }, function() {
     this.route('details');
+    this.route('beers');
   });
   this.route('beers');
 });

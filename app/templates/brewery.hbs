@@ -1,4 +1,4 @@
-
+{{!-- 
 
 <h1>{{this.model.title}}</h1>
 
@@ -10,4 +10,33 @@
 
 {{outlet}}
 
-<LinkTo @route='brewery.details'>Details</LinkTo>
+<LinkTo @route='brewery.details'>Details</LinkTo> --}}
+
+
+<nav class="rr-navbar" role="navigation">
+  <ul class="rr-nav">
+    <li class="rr-navbar-item">
+      <LinkTo @route="brewery.details" @model={{this.model}}>Details</LinkTo>
+    </li>
+    <li class="rr-navbar-item">
+      <LinkTo @route="brewery.beers" @model={{this.model}}>Beers</LinkTo>
+    </li>
+  </ul>
+</nav>
+{{!-- <BreweryDetails @model={{this.model}} /> --}}
+{{!-- <div>{{this.model.beers}}</div> --}}
+
+{{!-- {{#if this.model.beers.isPending}}
+  Loading...
+{{else}}
+  {{#each this.beers as |beers|}}
+    <div>{{beers.name}}</div>
+  {{/each}}
+{{/if}} --}}
+{{!-- {{log this.model.beers}} --}}
+
+{{!-- {{#each this.model.beers as |beer|}}
+  <div>{{beer.name}}</div>
+{{/each}} --}}
+{{outlet}}
+{{debugger}}
