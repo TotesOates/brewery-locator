@@ -8,5 +8,9 @@ export default Factory.extend({
 
   location(){
     return faker.lorem.paragraph();
+  },
+
+  afterCreate(brewery, server) {
+    server.createList('beer', 3, { brewery });
   }
 });
