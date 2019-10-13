@@ -1,20 +1,9 @@
-{{!-- <h1>Breweries</h1>
-
-<ul>
-  {{#each this.model as |post|}}
-    <li>
-      <LinkTo @route="brewery" @model={{post.id}}>{{post.title}}</LinkTo>
-    </li>
-  {{/each}}
-</ul> --}}
-
 <div class="brew-sidebar">
   <ul class="list pl3">
     {{#each this.model as |brewery|}}
       <li class='brew-list-item'>
         <LinkTo @route='brewery' @model={{brewery.id}} class='brew-band-link'>
           {{brewery.name}}
-          <span class='brew-pointer'> {{fa-icon 'angle-right'}} </span>
         </LinkTo>
       </li>
     {{/each}}
@@ -31,7 +20,7 @@
         />
         <button
         type="submit"
-        class="brew-action-button"
+        class="brew-action-button pointer"
         disabled={{this.isAddButtonDisabled}}>
         Add
         </button>
@@ -43,9 +32,11 @@
         </button>
     </form>
     {{else}}
-      <label {{on "click" this.addBrewery}}>
-      {{fa-icon "plus"}} <span class="ml1">Add new brewery</span>
-      </label>
+      <div class="pointer">
+        <label {{on "click" this.addBrewery}}>
+        {{fa-icon "plus"}} <span class="ml1 pointer">Add new brewery</span>
+        </label>
+      </div>
     {{/if}}
   </div>
 </div>

@@ -3,11 +3,11 @@ import faker from 'faker';
 
 export default Factory.extend({
   name() {
-    return `${faker.company.companyName()} brewery`;
+    return `${faker.company.companyName()} Brewery`;
   },
 
   location(){
-    return faker.address.streetAddress();
+    return `${faker.address.streetAddress()} ${faker.address.city()} ${faker.address.state()} ${faker.address.zipCode()}.`;
   },
 
   description(){
