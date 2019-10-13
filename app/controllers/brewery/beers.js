@@ -5,6 +5,7 @@ import { empty } from '@ember/object/computed';
 export default Controller.extend({
   isAddingBeer: false,
   newBeerName: "",
+  newBeerPercentage: null,
   isAddButtonDisabled: empty('newBeerName'),
   
   addBeer: action(function() {
@@ -18,10 +19,12 @@ export default Controller.extend({
   saveBeer: action(function(event) {
     event.preventDefault();
     let newBeer = this.store.createRecord('beer', {
-      title: this.newBeerName,
+      name: this.newBeerName,
+      alcoholPercentage: this.newBeerPercentage,
       brewery: this.model
     });
     newBeer.save();
+    this.set('isAddingBeer', false);
   }),
 
   updateRating: action(function(beer, rating) {

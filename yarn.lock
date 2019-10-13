@@ -4452,7 +4452,7 @@ ember-cli@~3.12.0:
     watch-detector "^0.1.0"
     yam "^1.0.0"
 
-ember-compatibility-helpers@^1.1.1, ember-compatibility-helpers@^1.1.2:
+ember-compatibility-helpers@^1.1.1, ember-compatibility-helpers@^1.1.2, ember-compatibility-helpers@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ember-compatibility-helpers/-/ember-compatibility-helpers-1.2.0.tgz#feee16c5e9ef1b1f1e53903b241740ad4b01097e"
   integrity sha512-pUW4MzJdcaQtwGsErYmitFRs0rlCYBAnunVzlFFUBr4xhjlCjgHJo0b53gFnhTgenNM3d3/NqLarzRhDTjXRTg==
@@ -4470,6 +4470,15 @@ ember-composable-helpers@^2.3.1:
     broccoli-funnel "2.0.1"
     ember-cli-babel "^7.1.0"
     resolve "^1.10.0"
+
+ember-concurrency@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ember-concurrency/-/ember-concurrency-1.1.1.tgz#5fd16431169f204b5829e295d521f4768078549b"
+  integrity sha512-+NLofyiTxssFo9n2IZxJBHCV0Aec6qlD0EJ0KEco3KMoMMLrRdAjrjWLAi3qXqz3lkXnLPeSEp3mFJ5KW+QVbw==
+  dependencies:
+    ember-cli-babel "^7.7.3"
+    ember-compatibility-helpers "^1.2.0"
+    ember-maybe-import-regenerator "^0.1.6"
 
 ember-data@~3.12.0:
   version "3.12.4"

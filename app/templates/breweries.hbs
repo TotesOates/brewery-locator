@@ -13,7 +13,7 @@
     {{#each this.model as |brewery|}}
       <li class='rr-list-item'>
         <LinkTo @route='brewery' @model={{brewery.id}} class='rr-band-link'>
-          {{brewery.title}}
+          {{brewery.name}}
           <span class='rr-pointer'> {{fa-icon 'angle-right'}} </span>
         </LinkTo>
       </li>

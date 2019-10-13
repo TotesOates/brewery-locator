@@ -25,11 +25,13 @@ export default function() {
   */
 
   this.get('breweries');
+  this.post('breweries');
   this.get('breweries/:id', {include: 'beer'});
   this.get('brewery/:id');
   this.get('breweries/:id');
   this.post('breweries/:id');
   this.patch('breweries/:id');
+  this.patch('beers/:id');
   this.post('beers');
   this.get('beers');
 }
