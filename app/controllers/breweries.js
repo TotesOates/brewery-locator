@@ -25,6 +25,6 @@ export default Controller.extend({
       newBreweryName: '',
       isAddingBrewery: false,
     });
-    this.router.transitionTo('breweries.brewery.beers', newBrewery.id);
+    this.router.transitionTo('brewery.beers', newBrewery.id);
   }),
 });
