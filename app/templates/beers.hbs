@@ -1,9 +1,12 @@
-<SearchBar @model={{this.model}} @searchTerm='Search by beer name' as |search|>
-  {{search}}
+<SearchBar class="pb3" @model={{this.model}} @searchTerm='Search by beer name' as |search|>
+  <br/>
+  {{#each search as |item|}}
+    {{#if item.length}}
+      <span class="underline pb3">Search Results</span>
+    {{/if}}
+    <li class="list pl3">{{item}}</li>
+  {{/each}}
 </SearchBar>
-{{this.searchItems}}
-{{log search}}
-{{log searchItems}}
 <ul class="list pl3">
   {{#each this.model as |beer|}}
     <li>
