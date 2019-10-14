@@ -1,12 +1,24 @@
-<h3 class="brew-app-title">{{this.model.name}}</h3>
+<h3 data-test-brewery-title class="brew-app-title">{{this.model.name}}</h3>
 
 <nav class="brew-navbar" role="navigation">
   <ul class="brew-nav">
     <li class="brew-navbar-item">
-      <LinkTo @route="brewery.details" @model={{this.model}}>Details</LinkTo>
+      <LinkTo 
+        data-test-link-brewery-details
+        @route="brewery.details" 
+        @model={{this.model}}
+      >
+        Details
+      </LinkTo>
     </li>
     <li class="brew-navbar-item">
-      <LinkTo @route="brewery.beers" @model={{this.model}}>Beers</LinkTo>
+      <LinkTo 
+        data-test-link-brewery-beers
+        @route="brewery.beers" 
+        @model={{this.model}}
+      >
+        Beers
+      </LinkTo>
     </li>
   </ul>
 </nav>

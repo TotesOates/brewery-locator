@@ -13,14 +13,5 @@ module('Integration | Component | star-rating', function(hooks) {
     await render(hbs`<StarRating />`);
 
     assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <StarRating>
-        template block text
-      </StarRating>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

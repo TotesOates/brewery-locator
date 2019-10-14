@@ -1,8 +1,8 @@
 <div class="brew-sidebar">
   <ul class="list pl3">
     {{#each this.model as |brewery|}}
-      <li class='brew-list-item'>
-        <LinkTo @route='brewery' @model={{brewery.id}} class='brew-band-link'>
+      <li data-test-brewery-title=true class="brew-list-item">
+        <LinkTo @route="brewery" @model={{brewery.id}} class="brew-band-link">
           {{brewery.name}}
         </LinkTo>
       </li>
@@ -12,23 +12,24 @@
     {{#if this.isAddingBrewery}}
       <form class="brew-inline-form" {{on "submit" this.saveBrewery}}>
         <Input
-        @type="text"
-        @value={{this.newBreweryName}}
-        class="brew-input"
-        placeholder="New brewery"
-        data-test-brew="new-band-input"
+          @type="text"
+          @value={{this.newBreweryName}}
+          class="brew-input"
+          placeholder="New brewery"
+          data-test-brew="new-band-input"
         />
         <button
-        type="submit"
-        class="brew-action-button pointer"
-        disabled={{this.isAddButtonDisabled}}>
-        Add
+          type="submit"
+          class="brew-action-button pointer"
+          disabled={{this.isAddButtonDisabled}}
+        >
+          Add
         </button>
 
         <button
-        class="brew-cancel-icon"
-        {{on "click" this.cancelAddBrewery}}>
-        {{fa-icon "times"}}
+          class="brew-cancel-icon"
+          {{on "click" this.cancelAddBrewery}}>
+          {{fa-icon "times"}}
         </button>
     </form>
     {{else}}

@@ -1,13 +1,9 @@
-{{#if hasBlock}}
-  {{yield stars}}
-{{else}}
   {{#each this.stars as |star|}}
     <button class="rating-star" {{on "click" (fn this.setRating star.rating)}}>
     {{#if star.isFull}}
-      <FaIcon @icon="star" @prefix="fas" />
+      <FaIcon @icon="star" @prefix="fas" class='yellow'/>
     {{else}}
       <FaIcon @icon="star" @prefix="far" />
     {{/if}}
     </button>
   {{/each}}
-{{/if}}

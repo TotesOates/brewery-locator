@@ -28,7 +28,6 @@ export default Controller.extend({
   }),
 
   updateRating: action(function(beer, rating) {
-    beer.set('rating', beer.rating === rating ? rating : rating);
-    beer.save();
+    beer.set('rating', beer.rating === rating ? 0 : rating);
     }),
 });

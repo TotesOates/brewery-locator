@@ -1,5 +1,5 @@
-<SearchBar class="pb3" @model={{this.model}} @searchTerm='Search by beer name' as |search|>
-  <br/>
+<SearchBar class="pb3" @model={{this.model}} @searchTerm="Search by beer name" as |search|>
+  <br>
   {{#each search as |item|}}
     {{#if item.length}}
       <span class="underline pb3">Search Results</span>
@@ -12,10 +12,10 @@
     <li>
       Beer Name: 
       {{beer.name}}
-      <br/>
+      <br>
       Type:
       <em>{{beer.type}}</em>
-      <br/>
+      <br>
       Alcohol Percentage:
       <span >{{beer.alcoholPercentage}} %</span>
     </li>
