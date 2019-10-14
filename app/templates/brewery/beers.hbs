@@ -6,13 +6,13 @@
       {{beer.alcoholPercentage}} % ABV
       
       <StarRating
-      class="fr"
-      @rating={{beer.rating}}
-      @item={{beer}}
-      @onClick={{fn this.updateRating beer}}
+        class="fr"
+        @rating={{beer.rating}}
+        @item={{beer}}
+        @onClick={{fn this.updateRating beer}}
       />
       {{#each this.stars as |star|}}
-      <span class="glyphicon {{if star.isFull 'glyphicon-star' 'glyphicon-star-empty'}}" />
+        <span class="{{if star.isFull 'yellow' 'white'}}" />
       {{/each}}
     </li>
   {{else}}

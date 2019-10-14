@@ -119,45 +119,45 @@ justify-content: space-between;
 .brew-sidebar {
   float: left;
   width: calc( 100% / 3 ); /* .w-third */
-  }
-  .brew-main-panel {
+}
+.brew-main-panel {
   float: left;
   width: calc( 100% / 1.5); /* .w-two-thirds */
-  }
-  .brew-list {
+}
+.brew-list {
   list-style-type: none;
-  }
-  .brew-list-item {
+}
+.brew-list-item {
   margin-bottom: 10px;
-  }
-  .brew-band-link > .brew-pointer {
+}
+.brew-band-link > .brew-pointer {
   margin-left: 5px;
   display: none;
-  }
-  .brew-band-link.active > .brew-pointer {
+}
+.brew-band-link.active > .brew-pointer {
   display: inline-block;
-  }
+}
 
-  .rating-star {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    color: inherit;
-    background-color: inherit;
-    }
+.rating-star {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-color: inherit;
+}
 
-    .brew-header-link > .brew-app-title {
-      margin-top: 0;
-      margin-bottom: 0;
-      }
-      .brew-panel {
-      padding: 1rem;
-      border: .125rem solid;
-      border-radius: .125rem;
-      }
-      .brew-textarea {
-      width: 100%;
-      padding: .5rem;
-      background-color: white;
-      }
+.brew-header-link > .brew-app-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+  .brew-panel {
+  padding: 1rem;
+  border: .125rem solid;
+  border-radius: .125rem;
+}
+  .brew-textarea {
+  width: 100%;
+  padding: .5rem;
+  background-color: white;
+}
